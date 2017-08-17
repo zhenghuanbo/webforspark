@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+      <script src="src/vendor/d3.v3.min.js" charset="utf-8"></script>
+      <script src="src/vendor/FileSaver.min.js"></script>
+      <script src="src/vendor/jquery.min.js"></script>
+      <script src="src/vendor/klay.js"></script>
+      <script src="src/vendor/jquery.ssd-vertical-navigation.js"></script>
+      <script src="src/app.js"></script>
+
+      <link rel="stylesheet" href="css/dagstudio.css" />
+      <link rel="stylesheet" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/default.css">
+      <!-- <link href="http://fonts.useso.com/css?family=Open+Sans:400,700,600" rel="stylesheet" type="text/css">
+       <link href="http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
+      <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+      <div id="header" >
+          <div id="title">数据挖掘平台</div>
+      </div>
+      <div id="container" style="">
+          <div id="bar" class="bar">
+              <ul id="leftNavigation">
+                  <li class="active">
+                      <a href="#"><i class="fa fa-coffee leftNavIcon"></i>模型</a>
+                      <ul>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 文本分类</a>
+                              <ul>
+                                  <li class="clickable">
+                                      <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 分类</a>
+                                  </li>
+                                  <li class="clickable">
+                                      <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 情感</a>
+                                  </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 情感分析</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-flask leftNavIcon"></i> 组件</a>
+                      <ul>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 文本分析</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 机器学习</a>
+                              <ul>
+                                  <div id="layerlist"></div>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 深度学习</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 数据预处理</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 目标数据</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#"><i class="fa fa-truck leftNavIcon"></i> 算法</a>
+                      <ul>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 分类/回归</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 聚类</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 推荐/关联</a>
+                          </li>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 深度神经网络</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="clickable">
+                      <a href="#"><i class="fa fa-envelope-o leftNavIcon"></i> 数据</a>
+                      <ul>
+                          <li>
+                              <a href="#"><i class="fa fa-angle-right leftNavIcon"></i> 数据库</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+          <div id="chart">
+
+          </div>
+          <div id="right-container">
+              <div id="toolbox">
+                  <input type="file" id="hidden-file-upload">
+                  <input id="cleanup-input" type="image" title="cleanup graph" src="icons/magic-wand.png" alt="clean">
+                  <input id="upload-input" type="image" title="upload graph" src="icons/upload-icon.png" alt="upload graph">
+                  <input type="image" id="download-input" title="download graph" src="icons/download-icon.png" alt="download graph">
+                  <input type="image" id="delete-graph" title="delete graph" src="icons/trash-icon.png" alt="delete graph">
+              </div>
+              <div id="floater">
+                  <div id="metadata"></div>
+                  <input type="image" id="toggle-metadata" title="toggle box" src="icons/expand-icon.png" alt="toggle metadata">
+              </div>
+          </div>
+      </div>
+      <div id="flooter" style=""></div>
+      <script src="src/dagstudio.js"></script>
+
+  </body>
+</html>
